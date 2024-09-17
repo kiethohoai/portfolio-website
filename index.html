@@ -3,10 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link href="./css/style.css" rel="stylesheet" />
     <title>Tailwind CSS - Portfolio Website</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
+  <body class="font-nunito">
+    <!-- todo intro section -->
+    <div class="h-[50vh] lg:h-screen bg-gradient-to-t from-indigo-200">
+      <!-- navbar -->
+      <nav class="fixed top-0 bg-white w-full">
+        <div class="container mx-auto py-5 flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logo.png" alt="Header logo" />
+            <span class="text-2xl font-bold text-indigo-900">Portwind.</span>
+          </div>
+
+          <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+            <li class="hover:text-gray-500"><a href="#!">homepage</a></li>
+            <li class="hover:text-gray-500"><a href="#!">about me</a></li>
+            <li class="hover:text-gray-500"><a href="#!">services</a></li>
+            <li class="hover:text-gray-500"><a href="#!">works</a></li>
+            <li class="hover:text-gray-500"><a href="#!">contact</a></li>
+          </ul>
+
+          <img class="w-5 cursor-pointer hidden md:block" src="./img/moon.png" alt="Moon" />
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-1 bg-black rounded-full"></div>
+            <div class="w-6 h-1 bg-black rounded-full"></div>
+            <div class="w-6 h-1 bg-black rounded-full"></div>
+          </div>
+
+          <ul
+            id="menu"
+            class="bg-indigo-900 hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center uppercase"
+          >
+            <li><a href="#!">homepage</a></li>
+            <li><a href="#!">about me</a></li>
+            <li><a href="#!">services</a></li>
+            <li><a href="#!">works</a></li>
+            <li><a href="#!">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- intro content -->
+      <div></div>
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
